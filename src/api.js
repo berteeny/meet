@@ -29,7 +29,7 @@ export const getToken = async (code) => {
 
 export const removeQuery = () => {
   let newurl;
-  if (window.history.oushState && window.location.pathname) {
+  if (window.history.pushState && window.location.pathname) {
     newurl =
       window.location.protocol +
       "//" +
