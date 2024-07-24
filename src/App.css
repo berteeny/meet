@@ -1,38 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
 .App {
   text-align: center;
+  padding: 2% 5%;
+  background-color: rgb(237, 230, 231);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App * {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#event-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 5px;
+  list-style: none;
+  background-color: rgb(241, 197, 204);
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.event-li {
+  padding: 15px;
+  width: 30%;
+  background-color: rgb(249, 221, 221);
+  border: solid rgb(197, 156, 162) 7px;
+  border-radius: 5px;
+}
+
+.event-li:hover {
+  background-color: rgba(213, 196, 211, 0.775);
+}
+
+p {
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(86, 4, 86);
+  margin-top: 0;
+}
+
+h2 {
+  color: rgb(51, 2, 51);
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+  margin-bottom: 20px;
+}
+
+.city {
+  width: 250px;
+}
+
+#city-search {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.suggestions {
+  width: 250px;
+  position: absolute;
+  top: 45px;
+  z-index: 2;
+  align-self: center;
+  margin: 0;
+  font-size: 14px;
+  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.suggestions > li {
+  text-align: left;
+  padding: 8px 6px 8px 10px;
+  background-color: #eee;
+  cursor: default;
+}
+
+.suggestions > li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.suggestions > li:hover {
+  background-color: #bcdcdb;
+}
+
+.event {
+  padding: 10px 10px 35px;
+  margin-bottom: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.details {
+  background-color: rgba(243, 226, 235, 0.803);
+  border: solid rgb(255, 233, 233) 5px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(249, 236, 238);
+  border: solid rgb(175, 156, 167) 2px;
+  border-radius: 5px;
+  margin: 7.5px;
+  padding: 3px 5px;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: rgb(225, 192, 197);
+}
+
+label {
+  padding-right: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .event-li {
+    width: 40%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .event-li {
+    width: 90%;
   }
 }
