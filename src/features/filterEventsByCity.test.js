@@ -30,7 +30,7 @@ defineFeature(feature, (test) => {
     });
   });
 
-  test("User should see the list of suggeste cities when they search for a city", ({
+  test("User should see the list of suggested cities when they search for a city", ({
     given,
     when,
     then,
