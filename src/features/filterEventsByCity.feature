@@ -5,7 +5,7 @@ Feature: Filter events by city
         When the app is opened
         Then the app will display upcoming events from all cities
 
-    Scenario: User should see the list of suggeste cities when they search for a city
+    Scenario: User should see the list of suggested cities when they search for a city
         Given the user has not yet begun typing in the search field,
         When user types letters into the field,
         Then user will be able to click on suggested cities from the list
