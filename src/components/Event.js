@@ -7,7 +7,7 @@ const Event = ({ event }) => {
     <li className="event-li">
       <h2>{event.summary}</h2>
       <p>{event.created}</p>
-      <p>{event.location}</p>
+      <p className="location">{event.location}</p>
       {showDetails ? 
       <p className="details">{event.description}</p> : null}
       
