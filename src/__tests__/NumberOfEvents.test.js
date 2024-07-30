@@ -7,7 +7,9 @@ describe("<NumberOfEvents /> Component", () => {
   let NumberOfEventsComponent;
 
   beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => {}}/>);
+    NumberOfEventsComponent = render(
+      <NumberOfEvents setCurrentNOE={() => {}} setErrorAlert={() => {}} />
+    );
   });
 
   test("renders number of events textbox", () => {

@@ -1,15 +1,22 @@
 import { useState } from "react";
 
-const NumberOfEvents = ({ setCurrentNOE }) => {
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
   const [eventNumber, setEventNumber] = useState("32");
 
   const handleChange = (event) => {
     const value = event.target.value;
+
+    let errorText;
+    if (isNaN(value) || value <= 0) {
+      errorText = "Please enter a positive number";
+    } else {
+      errorText = "";
+      setCurrentNOE(value);
+    }
     setEventNumber(value);
-    setCurrentNOE(value);
+    setErrorAlert(errorText);
   };
 
-  
   return (
     <div id="number-of-events">
       <label>Number of Events:</label>
