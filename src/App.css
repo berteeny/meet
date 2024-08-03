@@ -154,4 +154,8 @@ label {
   .event-li {
     width: 90%;
   }
+
+  h1 {
+    margin-top: 55px;
+  }
 }
