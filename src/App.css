@@ -144,6 +144,11 @@ label {
   z-index: 1000;
 }
 
+.charts-container {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .event-li {
     width: 40%;
@@ -157,5 +162,9 @@ label {
 
   h1 {
     margin-top: 55px;
+  }
+
+  .charts-container {
+    grid-template-columns: 1fr;
   }
 }
