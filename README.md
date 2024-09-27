@@ -1,4 +1,5 @@
 # Meet
+Meet is a React app that allows users to see events happening in their city. The app features include the ability to filter cities, change the number of events listed and run the app without an internet connection. The app is configured as a Progressive Web App and includes an "Add to Homescreen" button. More information on features below in "Features" section.
 
 ## Development
 The app is built with Serverless architecture and AWS Lambda functions for authentication and authorization. The code was written with a TDD approach, employing Jest for Unit & Integration testing and Puppeteer for End-to-End testing. It is hosted on Github Pages [here](https://berteeny.github.io/meet/). 
