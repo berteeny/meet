@@ -1,5 +1,8 @@
 # Meet
 
+## Build
+This app is built using `create-react-app` and run locally with `npm run start`. It is hosted on Github Pages [here](https://berteeny.github.io/meet/). The app is built with Serverless architecture and AWS Lambda functions.
+
 ## Feature 1: Filter Events by City
 As a user,
 I should be able to filter events by city
@@ -100,6 +103,3 @@ So that I can see a visual display of the event details
 	Given the user has opened the app,
 	When the user selects the chart view of upcoming events
 	Then the app will display the chart view of events in each city
-
-## Build
-This app is built using `create-react-app` and run locally with `npm run start`. It is hosted on Github Pages [here](https://berteeny.github.io/meet/).
