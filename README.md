@@ -1,10 +1,15 @@
 # Meet
 
+## Development
+The app is built with Serverless architecture and AWS Lambda functions for authentication and authorization. The code was written with a TDD approach, employing Jest for Unit & Integration testing and Puppeteer for End-to-End testing. It is hosted on Github Pages [here](https://berteeny.github.io/meet/). 
+
 ## Build
-This app is built using `create-react-app` and run locally with `npm run start`. It is hosted on Github Pages [here](https://berteeny.github.io/meet/). The app is built with Serverless architecture and AWS Lambda functions.
+This app is built using `$ create-react-app` and run locally with `$ npm run start`. 
+
+## Testing
+To run Unit and Integration tests with Jest, navigate to `__tests__` folder and run `$ npm run test`. To run End-to-End tests with Puppeteer, the app must first be running locally on `http://localhost:3000/`, then run ` $ npm run test`.
 
 ## Dependancies
-`"dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.5.2",
@@ -26,12 +31,16 @@ This app is built using `create-react-app` and run locally with `npm run start`.
     "workbox-routing": "^6.6.0",
     "workbox-strategies": "^6.6.0",
     "workbox-streams": "^6.6.0"
-  }
-`
 
+## devDependancies
+
+    "gh-pages": "^6.1.1",
+    "jest-cucumber": "^4.5.0",
+    "puppeteer": "^18.1.0"
+  
 ## Features
 
-# Feature 1: Filter Events by City
+### Feature 1: Filter Events by City
 As a user,
 I should be able to filter events by city
 So that I can see a list of events taking place in that city
@@ -53,7 +62,7 @@ So that I can see a list of events taking place in that city
 
 
 
-# Feature 2: Show/Hide Event Details
+### Feature 2: Show/Hide Event Details
 As a user,
 I should be able to click a show/hide toggle button
 So that I can show or hide event details
@@ -75,7 +84,7 @@ So that I can show or hide event details
 
 
 
-# Feature 3: Specify Number of Events
+### Feature 3: Specify Number of Events
 As a user,
 I should be able to decide/type in the number of events
 So I can change the number of events I can see
@@ -92,7 +101,7 @@ So I can change the number of events I can see
 
 
 
-# Feature 4: Use the App When Offline
+### Feature 4: Use the App When Offline
 As a user,
 I should be able to use the application while offline
 So that I can still see and interact with events information without an internet connection
@@ -110,7 +119,7 @@ So that I can still see and interact with events information without an internet
 
 
 
-# Feature 5: Add an App Shortcut to the Homescreen
+### Feature 5: Add an App Shortcut to the Homescreen
 As a user,
 I should be able to add a shortcut to the app to my homescreen
 So that I can find the app easily and without searching for it
@@ -122,7 +131,7 @@ So that I can find the app easily and without searching for it
 
 
 
-# Feature 6: Display Charts Visualizing Event Details
+### Feature 6: Display Charts Visualizing Event Details
 As a user,
 I should be able to access charts of events 
 So that I can see a visual display of the event details
@@ -131,3 +140,4 @@ So that I can see a visual display of the event details
 	Given the user has opened the app,
 	When the user selects the chart view of upcoming events
 	Then the app will display the chart view of events in each city
+
